@@ -130,7 +130,7 @@ sentinel/
 - Cloud Run for API deployment
 - Fully serverless pipeline
 
-See [`03_System_Architecture.md`](docs/03_System_Architecture.md) for details.
+See [`system_architecture.md`](docs/system_architecture.md) for details.
 
 ---
 
@@ -146,7 +146,7 @@ See [`03_System_Architecture.md`](docs/03_System_Architecture.md) for details.
 | GET | `/forecasts` | Get next-period spend forecast |
 | GET | `/health` | Health check |
 
-See [`05_API_Specification.md`](docs/05_API_Specification.md) for full details.
+See [`api_specification.md`](docs/api_specification.md) for full details.
 
 ---
 
