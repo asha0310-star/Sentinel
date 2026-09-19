@@ -2,7 +2,7 @@
 
 **Detect spending anomalies today. Forecast budget risk tomorrow. Act with intelligence.**
 
-Sentinel is an AI-powered financial intelligence dashboard that automatically detects unusual transactions, predicts next-quarter spending, and explains *why* — helping finance teams shift from reactive to proactive budget management.
+Sentinel is an AI-powered financial intelligence dashboard that automatically detects unusual transactions, predicts next-quarter spending, and explains why helping finance teams shift from reactive to proactive budget management.
 
 ---
 
