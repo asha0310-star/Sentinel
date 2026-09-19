@@ -34,7 +34,7 @@ Sentinel is an AI-powered financial intelligence dashboard that automatically de
 - Google Cloud SDK (optional for local dev; required for cloud deployment)
 - API keys: Gemini or Claude (for AI explanations)
 
-### Quick Start (Local Dev)
+### Quick Start
 
 ```bash
 # Clone repo
@@ -42,20 +42,21 @@ git clone https://github.com/yourusername/sentinel.git
 cd sentinel
 
 # Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your API keys
+pip install streamlit pandas numpy scikit-learn prophet google-genai
 
 # Run the Streamlit dashboard
 streamlit run app.py
-
-# In another terminal, run the backend API (optional)
-python -m uvicorn api.main:app --reload
 ```
 
 Visit `http://localhost:8501` to access the dashboard.
+
+### Roadmap / Final Round
+
+This repository still contains the original future-round architecture notes for a separate production system, but that is not the runnable MVP in this branch.
+
+- Production direction: FastAPI + PostgreSQL + Google Cloud deployment
+- Not part of the current single-file Streamlit build
+- If you are working on the hackathon MVP, use only the Streamlit flow above
 
 ### Sample Data
 
@@ -66,6 +67,7 @@ python scripts/generate_sample_data.py
 ```
 
 This creates `sample_spend.csv` with realistic spend patterns and seeded anomalies for testing.
+The dataset includes `seeded_anomaly`, `anomaly_type`, and `anomaly_group` columns so you can benchmark detection precision against known ground truth.
 
 ---
 

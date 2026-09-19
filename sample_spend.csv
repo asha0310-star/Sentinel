@@ -1,0 +1,401 @@
+transaction_id,date,vendor,category,amount,subtotal,tax_amount,invoice_number,is_seeded_anomaly
+0,2026-06-18,Lark & Ledger,Office Supplies,195.51,181.92,13.59,OFF00001,False
+1,2026-09-14,SignalForge,Software,144.5,135.66,8.84,SW00002,False
+2,2026-05-06,Oak & Stone Consulting,Professional Services,828.48,751.18,77.3,PS00003,False
+3,2026-04-20,Summit Airways,Travel,359.82,331.79,28.03,TRV00004,False
+4,2026-03-06,Verve Strategy,Professional Services,679.74,613.03,66.71,PS00005,False
+5,2026-08-22,Hearth & Stone,Facilities,406.83,368.73,38.1,FAC00006,False
+6,2026-05-19,NovaStack,Software,132.49,120.59,11.9,SW00007,False
+7,2026-03-19,Summit Stationery,Office Supplies,112.44,104.16,8.28,OFF00008,False
+8,2026-06-26,NovaStack,Software,64.32,59.69,4.63,SW00009,False
+9,2026-08-05,NovaStack,Software,124.23,113.63,10.6,SW00010,False
+10,2026-08-08,Bluebird Apps,Software,73.59,69.06,4.53,SW00011,False
+11,2026-02-12,Compass Transit,Travel,198.27,176.0,22.27,TRV00012,False
+12,2026-03-06,SignalForge,Software,115.89,108.76,7.13,SW00013,False
+13,2026-01-20,Metro Facilities,Facilities,389.63,351.57,38.06,FAC00014,False
+14,2026-05-27,Lark & Ledger,Office Supplies,144.27,132.94,11.33,OFF00015,False
+15,2025-12-28,Northline Maintenance,Facilities,281.62,255.92,25.7,FAC00016,False
+16,2025-12-29,Verve Strategy,Professional Services,249.04,230.22,18.82,PS00017,False
+17,2026-06-20,Harbor & Pine Travel,Travel,770.93,684.36,86.57,TRV00018,False
+18,2026-04-13,Cloudpeak,Software,49.06,46.13,2.93,SW00019,False
+19,2026-07-06,Verve Strategy,Professional Services,571.72,524.49,47.23,PS00020,False
+20,2026-05-05,Brightline Advisory,Professional Services,497.96,460.2,37.76,PS00021,False
+21,2026-06-11,Northline Maintenance,Facilities,309.35,284.88,24.47,FAC00022,False
+22,2026-03-30,Compass Transit,Travel,698.68,608.69,89.99,TRV00023,False
+23,2026-07-22,Oak & Stone Consulting,Professional Services,800.74,740.82,59.92,PS00024,False
+24,2026-04-21,Northwind Office,Office Supplies,120.72,111.23,9.49,OFF00025,False
+25,2026-05-28,Verve Strategy,Professional Services,362.99,329.89,33.1,PS00026,False
+26,2026-06-20,SignalForge,Software,122.61,112.9,9.71,SW00027,False
+27,2026-01-12,SignalForge,Software,98.49,91.21,7.28,SW00028,False
+28,2026-06-19,Summit Stationery,Office Supplies,74.09,68.7,5.39,OFF00029,False
+29,2026-08-31,Summit Stationery,Office Supplies,144.29,131.23,13.06,OFF00030,False
+30,2026-01-30,AeroRoute,Travel,598.28,551.01,47.27,TRV00031,False
+31,2026-05-02,Oak & Stone Consulting,Professional Services,591.53,541.26,50.27,PS00032,False
+32,2026-07-30,Cloudpeak,Software,78.94,73.26,5.68,SW00033,False
+33,2025-12-25,Harbor & Pine Travel,Travel,1224.55,1123.63,100.92,TRV00034,False
+34,2026-03-16,Summit Airways,Travel,687.51,610.49,77.02,TRV00035,False
+35,2026-07-07,Redwood Print House,Office Supplies,165.53,148.35,17.18,OFF00036,False
+36,2026-02-23,Brightline Advisory,Professional Services,572.83,519.25,53.58,PS00037,False
+37,2026-07-30,Summit Stationery,Office Supplies,117.37,108.22,9.15,OFF00038,False
+38,2026-08-26,Northline Maintenance,Facilities,477.02,440.77,36.25,FAC00039,False
+39,2026-04-18,Harbor & Pine Travel,Travel,1053.81,930.6,123.21,TRV00040,False
+40,2026-02-19,Verve Strategy,Professional Services,545.71,495.7,50.01,PS00041,False
+41,2026-06-19,Oak & Stone Consulting,Professional Services,433.91,394.51,39.4,PS00042,False
+42,2025-12-21,Harbor & Pine Travel,Travel,473.5,416.02,57.48,TRV00043,False
+43,2026-01-31,Verve Strategy,Professional Services,352.69,319.18,33.51,PS00044,False
+44,2026-03-07,Northwind Office,Office Supplies,199.66,182.33,17.33,OFF00045,False
+45,2026-01-28,Harbor & Pine Travel,Travel,187.72,172.34,15.38,TRV00046,False
+46,2026-09-12,Redwood Print House,Office Supplies,144.41,131.39,13.02,OFF00047,False
+47,2026-02-12,Summit Stationery,Office Supplies,195.3,176.43,18.87,OFF00048,False
+48,2026-04-18,Brightline Advisory,Professional Services,821.91,759.59,62.32,PS00049,False
+49,2026-05-03,Northwind Office,Office Supplies,179.71,165.73,13.98,OFF00050,False
+50,2026-05-06,Verve Strategy,Professional Services,611.36,569.11,42.25,PS00051,False
+51,2026-01-27,Redwood Print House,Office Supplies,137.17,124.72,12.45,OFF00052,False
+52,2026-07-11,Lark & Ledger,Office Supplies,141.0,131.67,9.33,OFF00053,False
+53,2026-01-19,Pioneer Legal,Professional Services,824.13,763.57,60.56,PS00054,False
+54,2026-07-18,Summit Airways,Travel,1071.1,965.93,105.17,TRV00055,False
+55,2026-04-01,Metro Facilities,Facilities,392.48,349.38,43.1,FAC00056,False
+56,2026-05-15,Harbor & Pine Travel,Travel,399.2,351.05,48.15,TRV00057,False
+57,2026-01-17,Compass Transit,Travel,247.7,227.2,20.5,TRV00058,False
+58,2026-03-17,Lark & Ledger,Office Supplies,88.18,81.78,6.4,OFF00059,False
+59,2026-03-08,AeroRoute,Travel,289.96,268.11,21.85,TRV00060,False
+60,2026-02-11,Metro Facilities,Facilities,151.7,136.17,15.53,FAC00061,False
+61,2026-04-07,Lark & Ledger,Office Supplies,110.11,98.86,11.25,OFF00062,False
+62,2026-05-16,Cedar Works,Facilities,240.8,220.42,20.38,FAC00063,False
+63,2026-05-26,Redwood Print House,Office Supplies,114.91,105.55,9.36,OFF00064,False
+64,2026-08-22,Pioneer Legal,Professional Services,846.5,764.68,81.82,PS00065,False
+65,2026-01-16,Redwood Print House,Office Supplies,212.45,189.86,22.59,OFF00066,False
+66,2026-05-28,Compass Transit,Travel,754.66,692.72,61.94,TRV00067,False
+67,2026-05-16,Cedar Works,Facilities,462.52,419.28,43.24,FAC00068,False
+68,2026-06-26,Hearth & Stone,Facilities,278.91,252.66,26.25,FAC00069,False
+69,2026-04-13,Metro Facilities,Facilities,275.32,250.67,24.65,FAC00070,False
+70,2026-04-18,Hearth & Stone,Facilities,502.63,445.81,56.82,FAC00071,False
+71,2026-08-28,Summit Airways,Travel,565.36,505.92,59.44,TRV00072,False
+72,2026-05-03,Verve Strategy,Professional Services,778.91,711.13,67.78,PS00073,False
+73,2026-03-09,Metro Facilities,Facilities,414.89,372.19,42.7,FAC00074,False
+74,2026-08-29,Bluebird Apps,Software,113.72,104.42,9.3,SW00075,False
+75,2026-01-12,Redwood Print House,Office Supplies,198.08,177.18,20.9,OFF00076,False
+76,2026-04-10,Lark & Ledger,Office Supplies,199.48,178.54,20.94,OFF00077,False
+77,2026-02-27,NovaStack,Software,132.79,122.43,10.36,SW00078,False
+78,2026-01-24,Northwind Office,Office Supplies,152.77,139.37,13.4,OFF00079,False
+79,2026-07-18,SignalForge,Software,151.74,139.98,11.76,SW00080,False
+80,2026-08-09,Lark & Ledger,Office Supplies,71.95,65.24,6.71,OFF00081,False
+81,2026-04-14,Redwood Print House,Office Supplies,194.21,178.72,15.49,OFF00082,False
+82,2026-08-01,Cedar Works,Facilities,238.4,217.57,20.83,FAC00083,False
+83,2026-02-01,Hearth & Stone,Facilities,209.28,189.93,19.35,FAC00084,False
+84,2026-01-24,Hearth & Stone,Facilities,399.0,356.56,42.44,FAC00085,False
+85,2026-04-30,Northline Maintenance,Facilities,399.47,357.98,41.49,FAC00086,False
+86,2026-04-15,Verve Strategy,Professional Services,836.65,778.37,58.28,PS00087,False
+87,2026-05-30,Summit Stationery,Office Supplies,157.01,143.69,13.32,OFF00088,False
+88,2026-04-17,Cedar Works,Facilities,404.58,369.45,35.13,FAC00089,False
+89,2026-08-29,Summit Airways,Travel,778.44,677.03,101.41,TRV00090,False
+90,2026-06-26,Lark & Ledger,Office Supplies,183.96,164.26,19.7,OFF00091,False
+91,2026-06-21,AeroRoute,Travel,797.69,698.02,99.67,TRV00092,False
+92,2026-02-25,Brightline Advisory,Professional Services,354.36,328.74,25.62,PS00093,False
+93,2026-08-27,AeroRoute,Travel,673.78,623.65,50.13,TRV00094,False
+94,2026-08-02,Northwind Office,Office Supplies,184.22,165.6,18.62,OFF00095,False
+95,2026-01-04,Metro Facilities,Facilities,518.93,463.91,55.02,FAC00096,False
+96,2026-08-02,Pioneer Legal,Professional Services,295.69,275.06,20.63,PS00097,False
+97,2026-05-07,Pioneer Legal,Professional Services,769.13,696.65,72.48,PS00098,False
+98,2026-07-31,NovaStack,Software,59.21,54.4,4.81,SW00099,False
+99,2026-09-15,Northline Maintenance,Facilities,361.71,325.63,36.08,FAC00100,False
+100,2026-02-18,Northwind Office,Office Supplies,168.07,156.4,11.67,OFF00101,False
+101,2026-02-08,Verve Strategy,Professional Services,905.95,822.57,83.38,PS00102,False
+102,2026-08-16,Summit Airways,Travel,346.94,315.09,31.85,TRV00103,False
+103,2026-05-27,Cloudpeak,Software,144.0,131.19,12.81,SW00104,False
+104,2026-04-25,Northwind Office,Office Supplies,127.97,118.94,9.03,OFF00105,False
+105,2026-01-25,Bluebird Apps,Software,87.0,80.77,6.23,SW00106,False
+106,2026-04-09,Northline Maintenance,Facilities,382.74,350.85,31.89,FAC00107,False
+107,2026-05-30,Cedar Works,Facilities,306.84,278.71,28.13,FAC00108,False
+108,2026-01-29,Cloudpeak,Software,146.92,135.03,11.89,SW00109,False
+109,2026-06-16,Summit Airways,Travel,851.67,750.29,101.38,TRV00110,False
+110,2026-02-12,Summit Airways,Travel,707.28,633.82,73.46,TRV00111,False
+111,2026-07-10,Bluebird Apps,Software,183.76,170.13,13.63,SW00112,False
+112,2026-03-03,Northline Maintenance,Facilities,288.8,261.43,27.37,FAC00113,False
+113,2026-01-20,Metro Facilities,Facilities,175.17,161.78,13.39,FAC00114,False
+114,2026-05-24,Summit Stationery,Office Supplies,86.85,78.45,8.4,OFF00115,False
+115,2025-12-24,Compass Transit,Travel,1303.74,1178.73,125.01,TRV00116,False
+116,2026-02-23,Metro Facilities,Facilities,180.38,159.92,20.46,FAC00117,False
+117,2026-09-19,Metro Facilities,Facilities,456.07,409.26,46.81,FAC00118,False
+118,2026-07-15,Redwood Print House,Office Supplies,154.02,142.55,11.47,OFF00119,False
+119,2026-05-13,Compass Transit,Travel,316.22,277.74,38.48,TRV00120,False
+120,2026-09-09,Verve Strategy,Professional Services,1074.72,999.12,75.6,PS00121,False
+121,2026-04-22,SignalForge,Software,86.3,79.16,7.14,SW00122,False
+122,2026-04-30,Summit Stationery,Office Supplies,81.41,72.99,8.42,OFF00123,False
+123,2026-01-01,Bluebird Apps,Software,79.96,74.06,5.9,SW00124,False
+124,2026-07-06,Pioneer Legal,Professional Services,339.71,307.78,31.93,PS00125,False
+125,2026-06-13,Bluebird Apps,Software,139.05,127.51,11.54,SW00126,False
+126,2026-07-07,Metro Facilities,Facilities,361.8,322.4,39.4,FAC00127,False
+127,2026-05-01,Harbor & Pine Travel,Travel,920.59,825.39,95.2,TRV00128,False
+128,2026-03-13,Bluebird Apps,Software,193.08,178.79,14.29,SW00129,False
+129,2026-05-15,Bluebird Apps,Software,48.87,44.56,4.31,SW00130,False
+130,2026-04-06,Northline Maintenance,Facilities,334.78,309.63,25.15,FAC00131,False
+131,2026-09-01,Redwood Print House,Office Supplies,133.79,121.64,12.15,OFF00132,False
+132,2026-04-13,NovaStack,Software,147.52,134.2,13.32,SW00133,False
+133,2026-06-08,Compass Transit,Travel,761.43,666.03,95.4,TRV00134,False
+134,2026-03-08,SignalForge,Software,201.32,189.11,12.21,SW00135,False
+135,2026-07-09,Pioneer Legal,Professional Services,665.02,606.68,58.34,PS00136,False
+136,2026-01-18,Bluebird Apps,Software,99.18,90.99,8.19,SW00137,False
+137,2026-03-25,Pioneer Legal,Professional Services,304.04,276.13,27.91,PS00138,False
+138,2026-08-17,Oak & Stone Consulting,Professional Services,745.45,686.13,59.32,PS00139,False
+139,2026-07-26,Brightline Advisory,Professional Services,367.03,333.03,34.0,PS00140,False
+140,2026-04-21,Compass Transit,Travel,228.75,211.14,17.61,TRV00141,False
+141,2026-01-19,Oak & Stone Consulting,Professional Services,758.35,688.81,69.54,PS00142,False
+142,2026-07-11,Lark & Ledger,Office Supplies,183.8,169.91,13.89,OFF00143,False
+143,2026-06-09,Metro Facilities,Facilities,588.8,532.5,56.3,FAC00144,False
+144,2026-05-14,Summit Airways,Travel,596.12,528.94,67.18,TRV00145,False
+145,2026-02-23,Summit Stationery,Office Supplies,205.17,184.39,20.78,OFF00146,False
+146,2026-07-03,Oak & Stone Consulting,Professional Services,599.29,542.12,57.17,PS00147,False
+147,2026-02-09,Bluebird Apps,Software,55.1,50.61,4.49,SW00148,False
+148,2026-05-15,Bluebird Apps,Software,79.52,74.63,4.89,SW00149,False
+149,2026-05-27,Brightline Advisory,Professional Services,1000.88,915.04,85.84,PS00150,False
+150,2026-05-05,Summit Stationery,Office Supplies,138.88,127.62,11.26,OFF00151,False
+151,2026-01-07,Brightline Advisory,Professional Services,356.38,327.52,28.86,PS00152,False
+152,2026-08-19,Pioneer Legal,Professional Services,710.08,645.48,64.6,PS00153,False
+153,2026-05-17,Summit Airways,Travel,490.09,446.98,43.11,TRV00154,False
+154,2026-08-21,Cloudpeak,Software,124.31,114.72,9.59,SW00155,False
+155,2026-06-17,Pioneer Legal,Professional Services,441.51,407.71,33.8,PS00156,False
+156,2026-03-25,Northwind Office,Office Supplies,114.17,102.89,11.28,OFF00157,False
+157,2026-07-23,Pioneer Legal,Professional Services,665.03,599.24,65.79,PS00158,False
+158,2026-02-28,SignalForge,Software,226.63,212.32,14.31,SW00159,False
+159,2026-05-23,Brightline Advisory,Professional Services,334.79,302.1,32.69,PS00160,False
+160,2026-09-03,Northline Maintenance,Facilities,167.81,154.64,13.17,FAC00161,False
+161,2025-12-31,Cloudpeak,Software,67.37,62.48,4.89,SW00162,False
+162,2026-07-25,Summit Airways,Travel,273.39,246.98,26.41,TRV00163,False
+163,2026-01-05,Compass Transit,Travel,774.63,703.48,71.15,TRV00164,False
+164,2026-02-21,Cloudpeak,Software,38.4,35.08,3.32,SW00165,False
+165,2025-12-20,NovaStack,Software,115.92,108.0,7.92,SW00166,False
+166,2026-05-20,Cloudpeak,Software,161.7,150.71,10.99,SW00167,False
+167,2026-02-24,Northline Maintenance,Facilities,371.97,340.82,31.15,FAC00168,False
+168,2026-02-25,Hearth & Stone,Facilities,159.24,142.74,16.5,FAC00169,False
+169,2026-01-30,Brightline Advisory,Professional Services,267.01,241.26,25.75,PS00170,False
+170,2026-09-02,Northwind Office,Office Supplies,63.63,57.79,5.84,OFF00171,False
+171,2026-02-24,Summit Stationery,Office Supplies,168.25,151.24,17.01,OFF00172,False
+172,2026-03-07,NovaStack,Software,150.77,138.2,12.57,SW00173,False
+173,2026-08-12,Verve Strategy,Professional Services,561.87,516.34,45.53,PS00174,False
+174,2026-08-27,Pioneer Legal,Professional Services,649.36,599.74,49.62,PS00175,False
+175,2026-07-27,Pioneer Legal,Professional Services,771.01,709.59,61.42,PS00176,False
+176,2026-08-03,Hearth & Stone,Facilities,148.13,137.04,11.09,FAC00177,False
+177,2026-02-03,Redwood Print House,Office Supplies,202.14,182.61,19.53,OFF00178,False
+178,2026-01-23,Oak & Stone Consulting,Professional Services,637.71,592.81,44.9,PS00179,False
+179,2026-06-28,Pioneer Legal,Professional Services,382.49,344.69,37.8,PS00180,False
+180,2026-08-31,AeroRoute,Travel,1116.25,1025.13,91.12,TRV00181,False
+181,2026-08-23,Redwood Print House,Office Supplies,224.25,203.66,20.59,OFF00182,False
+182,2026-07-06,Summit Stationery,Office Supplies,164.23,148.87,15.36,OFF00183,False
+183,2026-08-06,Lark & Ledger,Office Supplies,68.62,63.45,5.17,OFF00184,False
+184,2026-08-07,Verve Strategy,Professional Services,840.7,774.23,66.47,PS00185,False
+185,2026-06-24,Compass Transit,Travel,1030.57,909.52,121.05,TRV00186,False
+186,2026-01-30,Cedar Works,Facilities,343.27,306.55,36.72,FAC00187,False
+187,2026-05-12,Cloudpeak,Software,93.51,85.35,8.16,SW00188,False
+188,2026-02-02,Hearth & Stone,Facilities,229.55,210.8,18.75,FAC00189,False
+189,2026-02-12,Northline Maintenance,Facilities,587.19,538.41,48.78,FAC00190,False
+190,2026-08-18,Harbor & Pine Travel,Travel,978.48,876.62,101.86,TRV00191,False
+191,2026-07-11,Metro Facilities,Facilities,510.69,460.71,49.98,FAC00192,False
+192,2026-07-22,NovaStack,Software,187.87,176.57,11.3,SW00193,False
+193,2026-02-14,Brightline Advisory,Professional Services,730.96,659.02,71.94,PS00194,False
+194,2026-07-29,Oak & Stone Consulting,Professional Services,1057.15,976.34,80.81,PS00195,False
+195,2026-06-05,Hearth & Stone,Facilities,508.37,457.95,50.42,FAC00196,False
+196,2026-05-07,Bluebird Apps,Software,66.03,61.38,4.65,SW00197,False
+197,2026-01-25,Bluebird Apps,Software,77.35,72.05,5.3,SW00198,False
+198,2026-07-07,Lark & Ledger,Office Supplies,87.06,78.15,8.91,OFF00199,False
+199,2026-03-06,Harbor & Pine Travel,Travel,370.83,332.12,38.71,TRV00200,False
+200,2026-04-24,Summit Stationery,Office Supplies,72.89,65.2,7.69,OFF00201,False
+201,2026-06-17,AeroRoute,Travel,721.53,657.33,64.2,TRV00202,False
+202,2026-03-15,Summit Stationery,Office Supplies,243.7,217.74,25.96,OFF00203,False
+203,2026-09-16,Northline Maintenance,Facilities,541.98,498.65,43.33,FAC00204,False
+204,2026-02-19,Oak & Stone Consulting,Professional Services,355.7,324.94,30.76,PS00205,False
+205,2026-05-18,Cloudpeak,Software,59.84,56.11,3.73,SW00206,False
+206,2026-04-02,Lark & Ledger,Office Supplies,192.09,176.46,15.63,OFF00207,False
+207,2026-04-10,Bluebird Apps,Software,170.62,159.72,10.9,SW00208,False
+208,2026-04-11,Cedar Works,Facilities,653.24,597.53,55.71,FAC00209,False
+209,2026-08-09,Northwind Office,Office Supplies,96.69,88.5,8.19,OFF00210,False
+210,2026-08-18,Northwind Office,Office Supplies,238.93,219.81,19.12,OFF00211,False
+211,2026-05-14,Northline Maintenance,Facilities,309.61,284.55,25.06,FAC00212,False
+212,2026-01-09,Lark & Ledger,Office Supplies,209.7,191.59,18.11,OFF00213,False
+213,2026-05-14,Oak & Stone Consulting,Professional Services,656.28,610.34,45.94,PS00214,False
+214,2026-02-08,AeroRoute,Travel,716.86,656.8,60.06,TRV00215,False
+215,2026-05-21,Oak & Stone Consulting,Professional Services,398.06,371.6,26.46,PS00216,False
+216,2026-02-01,AeroRoute,Travel,521.72,468.94,52.78,TRV00217,False
+217,2026-04-09,Verve Strategy,Professional Services,621.96,560.55,61.41,PS00218,False
+218,2026-08-01,Lark & Ledger,Office Supplies,142.1,127.33,14.77,OFF00219,False
+219,2026-03-23,Northline Maintenance,Facilities,162.35,144.99,17.36,FAC00220,False
+220,2026-01-03,Northline Maintenance,Facilities,493.86,438.52,55.34,FAC00221,False
+221,2026-04-19,Northline Maintenance,Facilities,506.84,448.66,58.18,FAC00222,False
+222,2026-08-18,Harbor & Pine Travel,Travel,591.87,542.67,49.2,TRV00223,False
+223,2026-06-11,Lark & Ledger,Office Supplies,150.9,138.96,11.94,OFF00224,False
+224,2026-07-05,SignalForge,Software,149.99,139.02,10.97,SW00225,False
+225,2026-09-07,SignalForge,Software,87.71,80.68,7.03,SW00226,False
+226,2026-05-29,Verve Strategy,Professional Services,653.14,593.77,59.37,PS00227,False
+227,2026-09-18,Summit Stationery,Office Supplies,170.72,157.33,13.39,OFF00228,False
+228,2026-07-04,Compass Transit,Travel,1044.01,932.71,111.3,TRV00229,False
+229,2026-07-05,AeroRoute,Travel,880.12,793.36,86.76,TRV00230,False
+230,2026-04-09,Redwood Print House,Office Supplies,141.03,131.03,10.0,OFF00231,False
+231,2026-01-14,Compass Transit,Travel,864.27,767.28,96.99,TRV00232,False
+232,2026-08-21,AeroRoute,Travel,424.03,371.88,52.15,TRV00233,False
+233,2026-02-25,Compass Transit,Travel,777.53,707.32,70.21,TRV00234,False
+234,2026-03-07,Metro Facilities,Facilities,510.72,468.5,42.22,FAC00235,False
+235,2026-05-18,Compass Transit,Travel,951.34,847.36,103.98,TRV00236,False
+236,2026-03-14,Hearth & Stone,Facilities,329.55,299.6,29.95,FAC00237,False
+237,2026-06-26,Hearth & Stone,Facilities,192.16,171.0,21.16,FAC00238,False
+238,2026-03-29,Pioneer Legal,Professional Services,1052.61,972.04,80.57,PS00239,False
+239,2026-05-18,Bluebird Apps,Software,122.94,114.54,8.4,SW00240,False
+240,2026-04-09,Brightline Advisory,Professional Services,1042.2,939.66,102.54,PS00241,False
+241,2026-07-12,Brightline Advisory,Professional Services,1060.52,973.65,86.87,PS00242,False
+242,2026-06-30,Hearth & Stone,Facilities,551.03,504.2,46.83,FAC00243,False
+243,2026-05-30,Harbor & Pine Travel,Travel,570.1,501.35,68.75,TRV00244,False
+244,2026-05-26,Compass Transit,Travel,219.14,192.93,26.21,TRV00245,False
+245,2026-08-07,Northwind Office,Office Supplies,98.41,91.48,6.93,OFF00246,False
+246,2026-04-22,Summit Stationery,Office Supplies,96.46,88.4,8.06,OFF00247,False
+247,2026-06-08,Oak & Stone Consulting,Professional Services,1082.17,1008.75,73.42,PS00248,False
+248,2026-05-30,Brightline Advisory,Professional Services,514.4,469.11,45.29,PS00249,False
+249,2026-01-19,Hearth & Stone,Facilities,518.61,470.96,47.65,FAC00250,False
+250,2026-02-25,SignalForge,Software,190.96,173.65,17.31,SW00251,False
+251,2026-09-20,NovaStack,Software,115.26,105.83,9.43,SW00252,False
+252,2026-03-18,Lark & Ledger,Office Supplies,152.83,142.49,10.34,OFF00253,False
+253,2026-06-22,Harbor & Pine Travel,Travel,692.52,608.41,84.11,TRV00254,False
+254,2026-09-03,Verve Strategy,Professional Services,643.08,583.53,59.55,PS00255,False
+255,2026-05-04,NovaStack,Software,177.02,161.64,15.38,SW00256,False
+256,2026-03-19,Brightline Advisory,Professional Services,625.26,583.2,42.06,PS00257,False
+257,2025-12-20,Northwind Office,Office Supplies,159.28,148.62,10.66,OFF00258,False
+258,2026-07-13,Summit Airways,Travel,418.02,366.6,51.42,TRV00259,False
+259,2026-08-03,Oak & Stone Consulting,Professional Services,866.08,806.62,59.46,PS00260,False
+260,2026-05-19,Cloudpeak,Software,85.61,79.26,6.35,SW00261,False
+261,2026-07-14,Northline Maintenance,Facilities,367.72,337.06,30.66,FAC00262,False
+262,2026-06-16,Metro Facilities,Facilities,237.4,218.04,19.36,FAC00263,False
+263,2026-02-06,Metro Facilities,Facilities,544.27,481.86,62.41,FAC00264,False
+264,2026-09-17,Brightline Advisory,Professional Services,718.36,650.1,68.26,PS00265,False
+265,2026-09-14,Cedar Works,Facilities,545.25,499.75,45.5,FAC00266,False
+266,2026-09-06,SignalForge,Software,166.85,154.2,12.65,SW00267,False
+267,2026-08-04,Harbor & Pine Travel,Travel,816.4,753.51,62.89,TRV00268,False
+268,2026-04-01,Pioneer Legal,Professional Services,468.74,426.0,42.74,PS00269,False
+269,2026-08-04,NovaStack,Software,131.76,123.04,8.72,SW00270,False
+270,2026-02-02,Redwood Print House,Office Supplies,183.29,170.77,12.52,OFF00271,False
+271,2025-12-20,Harbor & Pine Travel,Travel,622.22,552.97,69.25,TRV00272,False
+272,2026-08-07,Metro Facilities,Facilities,381.52,338.59,42.93,FAC00273,False
+273,2026-01-05,Oak & Stone Consulting,Professional Services,450.5,417.97,32.53,PS00274,False
+274,2025-12-27,Summit Airways,Travel,406.11,366.0,40.11,TRV00275,False
+275,2026-02-06,Summit Airways,Travel,379.41,344.16,35.25,TRV00276,False
+276,2026-02-25,Harbor & Pine Travel,Travel,541.48,482.29,59.19,TRV00277,False
+277,2026-02-14,Summit Stationery,Office Supplies,261.41,243.17,18.24,OFF00278,False
+278,2026-01-02,Metro Facilities,Facilities,425.07,378.64,46.43,FAC00279,False
+279,2026-07-15,Lark & Ledger,Office Supplies,228.96,204.46,24.5,OFF00280,False
+280,2026-02-15,NovaStack,Software,123.36,113.9,9.46,SW00281,False
+281,2026-07-29,Bluebird Apps,Software,73.92,68.45,5.47,SW00282,False
+282,2026-03-09,Cloudpeak,Software,122.76,113.31,9.45,SW00283,False
+283,2026-01-24,Oak & Stone Consulting,Professional Services,497.3,462.98,34.32,PS00284,False
+284,2025-12-28,Cedar Works,Facilities,324.75,294.8,29.95,FAC00285,False
+285,2026-06-12,Bluebird Apps,Software,218.08,202.74,15.34,SW00286,False
+286,2026-03-04,Hearth & Stone,Facilities,433.18,389.22,43.96,FAC00287,False
+287,2026-05-21,Cloudpeak,Software,91.33,84.95,6.38,SW00288,False
+288,2026-03-14,NovaStack,Software,193.89,181.45,12.44,SW00289,False
+289,2026-05-23,Lark & Ledger,Office Supplies,206.34,185.67,20.67,OFF00290,False
+290,2026-02-07,Verve Strategy,Professional Services,736.43,664.76,71.67,PS00291,False
+291,2026-04-06,Bluebird Apps,Software,204.24,192.65,11.59,SW00292,False
+292,2026-09-03,Metro Facilities,Facilities,394.46,353.09,41.37,FAC00293,False
+293,2026-08-11,Metro Facilities,Facilities,399.79,370.08,29.71,FAC00294,False
+294,2026-09-03,Bluebird Apps,Software,188.59,174.2,14.39,SW00295,False
+295,2026-03-04,AeroRoute,Travel,405.38,363.65,41.73,TRV00296,False
+296,2026-02-24,Summit Airways,Travel,1250.54,1144.0,106.54,TRV00297,False
+297,2026-06-01,Verve Strategy,Professional Services,955.26,889.4,65.86,PS00298,False
+298,2026-05-07,Compass Transit,Travel,854.52,761.26,93.26,TRV00299,False
+299,2026-04-15,Bluebird Apps,Software,102.09,95.88,6.21,SW00300,False
+300,2026-02-18,Verve Strategy,Professional Services,487.02,440.75,46.27,PS00301,False
+301,2025-12-26,Brightline Advisory,Professional Services,691.21,629.74,61.47,PS00302,False
+302,2026-06-10,NovaStack,Software,107.72,101.47,6.25,SW00303,False
+303,2026-04-25,Northline Maintenance,Facilities,493.31,453.83,39.48,FAC00304,False
+304,2026-05-04,NovaStack,Software,60.43,56.15,4.28,SW00305,False
+305,2026-07-30,AeroRoute,Travel,1281.69,1138.66,143.03,TRV00306,False
+306,2026-08-20,Verve Strategy,Professional Services,727.65,679.14,48.51,PS00307,False
+307,2026-05-16,Metro Facilities,Facilities,901.15,832.84,68.31,FAC00308,False
+308,2026-05-18,Summit Airways,Travel,1016.17,887.09,129.08,TRV00309,False
+309,2026-08-07,Compass Transit,Travel,315.25,276.92,38.33,TRV00310,False
+310,2026-07-06,Brightline Advisory,Professional Services,1218.87,1122.46,96.41,PS00311,False
+311,2026-04-21,Bluebird Apps,Software,54.36,50.69,3.67,SW00312,False
+312,2026-05-10,Metro Facilities,Facilities,743.96,662.26,81.7,FAC00313,False
+313,2026-07-02,AeroRoute,Travel,1356.66,1191.15,165.51,TRV00314,False
+314,2026-06-10,Compass Transit,Travel,1210.7,1082.87,127.83,TRV00315,False
+315,2026-08-24,Lark & Ledger,Office Supplies,274.72,251.08,23.64,OFF00316,False
+316,2026-08-14,Cloudpeak,Software,101.3,95.24,6.06,SW00317,False
+317,2026-01-10,Summit Airways,Travel,992.29,866.52,125.77,TRV00318,False
+318,2026-01-12,Pioneer Legal,Professional Services,386.42,348.43,37.99,PS00319,False
+319,2026-02-18,Lark & Ledger,Office Supplies,188.82,168.76,20.06,OFF00320,False
+320,2026-05-23,Northwind Office,Office Supplies,92.63,85.79,6.84,OFF00321,False
+321,2026-05-25,Northwind Office,Office Supplies,255.05,231.59,23.46,OFF00322,False
+322,2026-05-08,Metro Facilities,Facilities,634.95,563.18,71.77,FAC00323,False
+323,2026-03-25,Brightline Advisory,Professional Services,337.98,310.78,27.2,PS00324,False
+324,2026-08-10,Cedar Works,Facilities,557.65,512.01,45.64,FAC00325,False
+325,2026-03-18,Summit Airways,Travel,913.18,822.36,90.82,TRV00326,False
+326,2026-07-19,Brightline Advisory,Professional Services,541.61,502.65,38.96,PS00327,False
+327,2026-01-18,Cedar Works,Facilities,414.55,375.02,39.53,FAC00328,False
+328,2026-03-06,Oak & Stone Consulting,Professional Services,678.69,624.44,54.25,PS00329,False
+329,2026-01-07,Verve Strategy,Professional Services,727.41,664.0,63.41,PS00330,False
+330,2026-06-02,Metro Facilities,Facilities,538.24,487.63,50.61,FAC00331,False
+331,2026-01-05,Pioneer Legal,Professional Services,986.17,895.48,90.69,PS00332,False
+332,2026-04-24,Oak & Stone Consulting,Professional Services,1012.13,933.78,78.35,PS00333,False
+333,2026-06-20,Hearth & Stone,Facilities,689.69,627.82,61.87,FAC00334,False
+334,2026-06-11,Cloudpeak,Software,137.3,127.32,9.98,SW00335,False
+335,2026-02-17,Pioneer Legal,Professional Services,831.1,771.01,60.09,PS00336,False
+336,2026-01-20,Summit Airways,Travel,1080.13,992.99,87.14,TRV00337,False
+337,2026-09-08,Metro Facilities,Facilities,222.56,203.33,19.23,FAC00338,False
+338,2026-02-09,Summit Airways,Travel,1040.02,952.17,87.85,TRV00339,False
+339,2026-03-28,Verve Strategy,Professional Services,632.45,585.09,47.36,PS00340,False
+340,2026-04-04,Harbor & Pine Travel,Travel,820.69,756.47,64.22,TRV00341,False
+341,2026-05-01,Summit Stationery,Office Supplies,241.74,217.64,24.1,OFF00342,False
+342,2026-04-19,Harbor & Pine Travel,Travel,464.51,425.24,39.27,TRV00343,False
+343,2026-04-27,Brightline Advisory,Professional Services,579.45,526.74,52.71,PS00344,False
+344,2026-02-08,Summit Stationery,Office Supplies,97.38,89.74,7.64,OFF00345,False
+345,2026-03-31,Compass Transit,Travel,498.95,435.73,63.22,TRV00346,False
+346,2026-06-10,Harbor & Pine Travel,Travel,1442.59,1284.65,157.94,TRV00347,False
+347,2026-08-21,Hearth & Stone,Facilities,671.36,608.64,62.72,FAC00348,False
+348,2026-07-03,Metro Facilities,Facilities,407.76,370.57,37.19,FAC00349,False
+349,2026-05-25,Summit Stationery,Office Supplies,197.17,183.34,13.83,OFF00350,False
+350,2026-02-12,Metro Facilities,Facilities,663.47,590.46,73.01,FAC00351,False
+351,2026-08-21,Metro Facilities,Facilities,316.99,289.91,27.08,FAC00352,False
+352,2026-06-10,Pioneer Legal,Professional Services,582.13,538.09,44.04,PS00353,False
+353,2026-02-04,Brightline Advisory,Professional Services,411.94,371.8,40.14,PS00354,False
+354,2026-01-05,Hearth & Stone,Facilities,485.67,446.07,39.6,FAC00355,False
+355,2026-07-31,Brightline Advisory,Professional Services,651.93,606.11,45.82,PS00356,False
+356,2026-09-20,Summit Airways,Travel,455.48,396.93,58.55,TRV00357,False
+357,2026-03-02,Pioneer Legal,Professional Services,639.79,592.33,47.46,PS00358,False
+358,2026-06-05,Cedar Works,Facilities,478.46,438.69,39.77,FAC00359,False
+359,2025-12-21,Northline Maintenance,Facilities,506.58,468.22,38.36,FAC00360,False
+360,2026-08-23,AeroRoute,Travel,976.52,881.6,94.92,TRV00361,False
+361,2026-07-13,Cloudpeak,Software,101.89,95.42,6.47,SW00362,False
+362,2026-04-18,Cloudpeak,Software,205.41,188.86,16.55,SW00363,False
+363,2026-09-16,NovaStack,Software,114.04,103.96,10.08,SW00364,False
+364,2026-09-19,Northwind Office,Office Supplies,209.91,191.98,17.93,OFF00365,False
+365,2026-02-13,Metro Facilities,Facilities,256.04,233.94,22.1,FAC00366,False
+366,2026-02-16,Lark & Ledger,Office Supplies,227.35,209.79,17.56,OFF00367,False
+367,2026-02-28,Brightline Advisory,Professional Services,441.83,406.81,35.02,PS00368,False
+368,2026-04-09,Brightline Advisory,Professional Services,569.25,528.81,40.44,PS00369,False
+369,2026-06-13,Verve Strategy,Professional Services,895.1,808.8,86.3,PS00370,False
+370,2026-02-26,Cedar Works,Facilities,256.04,227.92,28.12,FAC00371,False
+371,2026-03-14,Pioneer Legal,Professional Services,855.81,796.0,59.81,PS00372,False
+372,2026-02-01,Lark & Ledger,Office Supplies,221.46,198.83,22.63,OFF00373,False
+373,2026-05-14,Brightline Advisory,Professional Services,979.51,890.48,89.03,PS00374,False
+374,2026-04-15,Hearth & Stone,Facilities,359.95,325.67,34.28,FAC00375,False
+375,2026-05-29,Redwood Print House,Office Supplies,164.38,147.34,17.04,OFF00376,False
+376,2026-07-20,Metro Facilities,Facilities,525.95,482.78,43.17,FAC00377,False
+377,2026-07-26,Hearth & Stone,Facilities,705.25,626.39,78.86,FAC00378,False
+378,2026-04-06,Lark & Ledger,Office Supplies,205.2,183.32,21.88,OFF00379,False
+379,2026-01-14,AeroRoute,Travel,717.3,652.16,65.14,TRV00380,False
+380,2026-06-03,Bluebird Apps,Software,241.57,225.33,16.24,SW00381,False
+381,2026-07-19,AeroRoute,Travel,711.01,631.4,79.61,TRV00382,False
+382,2026-09-06,Verve Strategy,Professional Services,592.85,542.63,50.22,PS00383,False
+383,2026-05-05,Redwood Print House,Office Supplies,82.87,74.44,8.43,OFF00384,False
+384,2026-08-08,Metro Facilities,Facilities,609.94,545.81,64.13,FAC00385,False
+385,2026-02-28,Summit Airways,Travel,1196.93,1048.1,148.83,TRV00386,False
+386,2026-05-19,AeroRoute,Travel,997.49,909.99,87.5,TRV00387,False
+387,2025-12-27,Cloudpeak,Software,230.66,212.51,18.15,SW00388,False
+388,2026-09-01,Summit Airways,Travel,730.01,649.0,81.01,TRV00389,False
+389,2026-02-13,Cloudpeak,Software,265.6,247.3,18.3,SW00390,False
+390,2026-09-09,SignalForge,Software,87.71,80.68,7.03,DUP00391,True
+391,2026-05-07,Verve Strategy,Professional Services,611.36,569.11,42.25,DUP00392,True
+392,2026-07-22,Metro Facilities,Facilities,525.95,482.78,43.17,DUP00393,True
+393,2026-08-04,Cedar Works,Facilities,1136.97,1048.38,88.59,OUT00001,True
+394,2026-01-22,AeroRoute,Travel,2337.09,2153.63,183.46,OUT00002,True
+395,2026-05-14,Northwind Office,Office Supplies,1285.9,1167.36,118.54,OUT00003,True
+396,2026-08-19,Oak & Stone Consulting,Professional Services,4735.59,4310.92,424.67,OUT00004,True
+397,2026-07-01,Cloudpeak,Software,100.29,81.82,7.52,ERR00001,True
+398,2026-01-31,Harbor & Pine Travel,Travel,563.83,493.87,50.93,ERR00002,True
+399,2026-08-19,Cedar Works,Facilities,464.75,408.55,37.11,ERR00003,True
