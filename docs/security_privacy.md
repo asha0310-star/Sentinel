@@ -1,136 +1,88 @@
-# UI/UX Specification
+# Security & Privacy
 ## Sentinel: Spend Anomaly & Forecast Intelligence Dashboard
 
 ---
 
-## 1. Design Principles
+## 1. Data Classification
 
-1. **Clarity over cleverness** — a finance manager with no ML background should understand every screen in under 10 seconds.
-2. **Show the "why," not just the "what"** — every flag/number is paired with a plain-language explanation.
-3. **Confidence, not false precision** — forecasts always show a range, never a single misleading number.
-4. **Progressive disclosure** — dashboard shows summary first; details appear on demand (click-through), not all at once.
+| Data Type | Sensitivity | Examples |
+|---|---|---|
+| Financial transaction data | High | Vendor names, amounts, invoice numbers |
+| Uploaded raw files | High | Original CSV/XLSX spend exports |
+| AI-generated insights | Medium | Derived text — sensitivity inherited from source data |
+| System/audit logs | Low–Medium | Timestamps, action types, actor IDs |
 
----
-
-## 2. Information Architecture
-
-```
-Dashboard (Home)
-├── Upload Panel
-├── Summary Bar (KPIs)
-├── Tab: Anomalies
-│    └── Anomaly Detail Modal
-├── Tab: Forecast
-│    └── What-If Panel (final round)
-└── Tab: Insights Feed
-```
+**Note:** No personally identifiable customer data or payment card data is collected by design. If real Averis data is used for testing, treat vendor/pricing data as confidential — do not commit it to the public hackathon GitHub repo.
 
 ---
 
-## 3. Screen-by-Screen Specification
+## 2. Data Handling Rules
 
-### 3.1 Upload Screen
-**Purpose:** Entry point — get spend data into the system.
-
-| Element | Behavior |
+| Rule | Implementation |
 |---|---|
-| Drag-and-drop zone | Accepts CSV/XLSX; shows filename + row count on success |
-| "Process" button | Disabled until valid file is loaded |
-| Progress indicator | Shows "Uploading → Parsing → Analyzing → Done" as processing states |
-| Sample data link | "No data? Try our sample dataset" — de-risks live demo |
+| Never commit real spend data to GitHub | Use `.gitignore` for `/data/real/`; only synthetic/sample data in repo |
+| API keys never hardcoded | Store in environment variables / GCP Secret Manager; `.env` excluded from version control |
+| Uploaded files stored in private bucket | GCS bucket set to private (no public read access) |
+| Database not publicly exposed | Cloud SQL configured with private IP / authorized networks only |
 
 ---
 
-### 3.2 Dashboard Home / Summary Bar
-**Purpose:** At-a-glance health check, visible immediately after processing.
+## 3. Authentication & Access Control
 
-| KPI Card | Content |
+| Round | Approach |
 |---|---|
-| Total Transactions | e.g., "482 transactions analyzed" |
-| Anomalies Found | e.g., "7 flagged (3 high severity)" — red accent |
-| Next-Period Forecast | e.g., "$102.5K ± $7.5K" |
-| Potential Savings Identified | e.g., "$12,400 in flagged discrepancies" |
+| **Preliminary** | No auth required (single-user local demo) — acceptable for hackathon scope |
+| **Final** | Basic API key or bearer token auth on all endpoints; scoped service account for Cloud Function → Cloud SQL access |
 
-**Layout:** 4 cards in a horizontal row (desktop) / stacked (mobile).
+**Principle of least privilege:** The Cloud Function's service account should have write access only to the specific Cloud SQL instance and bucket it needs — not project-wide permissions.
 
 ---
 
-### 3.3 Tab: Anomalies
-**Purpose:** Primary "problems today" view.
+## 4. Encryption
 
-| Element | Behavior |
+| Layer | Standard |
 |---|---|
-| Table/list of transactions | Sorted by severity (high → low) by default |
-| Row highlighting | High = red-left-border, Medium = amber, Low = grey |
-| Columns | Vendor, Date, Amount, Type (outlier/duplicate/math error), Severity, Reviewed |
-| Filter bar | Filter by severity, type, reviewed status |
-| Row click | Opens Anomaly Detail Modal |
-
-**Anomaly Detail Modal:**
-- Transaction fields (vendor, invoice #, date, amount, tax, subtotal)
-- Anomaly score (visualized as a simple gauge/bar, not raw decimal)
-- **AI Explanation** (plain text, highlighted box): *"This invoice is 25% above Acme Supplies' historical average."*
-- **Recommendation** (final round): *"Review pricing agreement; consider renegotiation."*
-- Action buttons: "Mark Reviewed" / "Dismiss"
+| Data in transit | HTTPS/TLS for all API calls (enforced by Cloud Run default) |
+| Data at rest | GCS and Cloud SQL default encryption-at-rest (enabled by default on GCP) |
+| Secrets | GCP Secret Manager (not environment files in production) |
 
 ---
 
-### 3.4 Tab: Forecast
-**Purpose:** Forward-looking view.
+## 5. Third-Party AI API Usage
 
-| Element | Behavior |
+| Concern | Mitigation |
 |---|---|
-| Line chart | Historical spend (solid line) + forecast (dashed line) |
-| Confidence band | Shaded area around forecast line (upper/lower bound) |
-| Category filter | Dropdown to view forecast for a specific spend category |
-| AI Trend Summary | Text box below chart: *"Spend is trending up 8% QoQ, driven mainly by Travel."* |
-| What-If Panel (final round) | Simple form: select a vendor/category to remove/adjust → see recalculated forecast line overlaid |
+| Sending transaction data to an external AI API | Strip/mask vendor names to generic labels ("Vendor A") if using real data in a public demo; use synthetic data for any recorded video |
+| API key exposure | Backend-only calls to AI API — frontend never holds the key |
+| Rate limiting / cost control | Set budget alerts on GCP; cache AI responses per anomaly to avoid redundant calls |
+| Service unavailability | Graceful degradation — show cached/fallback explanation, never expose raw error/stack trace to the user |
 
 ---
 
-### 3.5 Tab: Insights Feed
-**Purpose:** Chronological, scannable list of all AI-generated insights (anomaly + forecast), for users who want a "digest" view rather than drilling into charts.
+## 6. Input Validation & Abuse Prevention
 
-| Element | Behavior |
+| Risk | Control |
 |---|---|
-| Card list | Each card: icon (⚠️ anomaly / 📈 forecast), short explanation, timestamp |
-| Click card | Jumps to the relevant Anomaly Detail or Forecast tab |
+| Malicious file upload (oversized, wrong type, malformed CSV) | File type/size validation before processing; row/column schema check |
+| Injection via uploaded field values | Parameterized queries only — never string-concatenated SQL |
+| Excessive/automated upload abuse | Basic rate limiting on `/upload` endpoint (final round) |
 
 ---
 
-## 4. Visual Design Guidelines
+## 7. Compliance Considerations (Awareness, Not Full Implementation)
 
-| Aspect | Guideline |
-|---|---|
-| **Color palette** | Neutral base (white/grey) + semantic accents: red (high severity), amber (medium), green (healthy/normal), blue (forecast/neutral info) |
-| **Typography** | Clear sans-serif (e.g., Inter/Roboto); numbers in tabular/monospaced figures for easy scanning |
-| **Charts** | Vega-Lite or Plotly for forecast chart (confidence bands render cleanly); avoid 3D or decorative chart junk |
-| **Density** | Favor whitespace over cramming — judges are viewing this on a shared screen during a 5-min demo |
-| **Loading states** | Every async action (upload, AI call) shows a spinner/skeleton — never a blank screen |
+This is a hackathon prototype, not a production financial system. The following are noted for the roadmap/future-work section rather than required for submission:
+
+- **PDPA (Malaysia) / data residency** — if deployed with real organizational data, storage region and consent handling would need review
+- **Audit trail immutability** — the `audit_log` table (see Database Design) is a first step toward tamper-evident logging
+- **Data retention policy** — uploaded files and derived data would need a defined retention/deletion schedule in production
 
 ---
 
-## 5. Key User Flow (Demo Path)
+## 8. Hackathon Demo Safety Checklist
 
-```mermaid
-flowchart LR
-    A[Land on Upload Screen] --> B[Upload/select sample data]
-    B --> C[See processing progress]
-    C --> D[Summary bar loads]
-    D --> E[Click Anomalies tab]
-    E --> F[Click a flagged transaction]
-    F --> G[See AI explanation + recommendation]
-    G --> H[Click Forecast tab]
-    H --> I[See forecast chart + confidence band]
-    I --> J[Read AI trend summary]
-```
-
-This is the exact path to walk through in the 5-minute demo video — it touches every mandatory feature in under 2 minutes of screen time.
-
----
-
-## 6. Accessibility & Usability Notes
-
-- Don't rely on color alone to indicate severity — pair with text labels ("High", "Medium", "Low") and icons
-- Ensure chart tooltips show exact numbers on hover (not just visual position)
-- Keep AI explanation text concise (2–3 sentences max) — long paragraphs undermine the "instant clarity" goal
+- [ ] No real vendor/pricing data appears in the public GitHub repo
+- [ ] No real vendor/pricing data appears in the recorded demo video (use synthetic/sample data)
+- [ ] `.env` / API keys excluded via `.gitignore`
+- [ ] GCS bucket and Cloud SQL instance are not publicly accessible
+- [ ] Demo environment uses test/synthetic credentials only
